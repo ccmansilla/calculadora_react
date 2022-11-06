@@ -1,7 +1,7 @@
 import './App.css';
 import Tecla from './components/Tecla';
 import Pantalla from './components/Pantalla';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 function App() {
   /* constantes matematicas */

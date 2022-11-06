@@ -1,4 +1,5 @@
-import './Tecla.css'
+import React from 'react';
+import './Tecla.css';
 
 const Tecla = ({valor, estilo, funcion})=>{
     return (
