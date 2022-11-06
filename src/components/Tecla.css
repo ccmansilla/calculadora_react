@@ -1,0 +1,33 @@
+.btnCalc {
+    width: 100%;
+    margin: 5%;
+    background-color: rgb(23, 27, 37);
+    color: white;
+    border: 0;
+    font-family: 'DM Mono', monospace;
+    box-shadow: 2px 2px 2px black;
+}
+
+
+.btnCalc:hover {
+    background-color: rgb(55, 55, 78);
+    color: white;
+}
+
+.btnIgual {
+    width: 100%;
+    margin: 5%;
+    color: white;
+    border: 0;
+    font-family: 'DM Mono', monospace;
+    box-shadow: 2px 2px 2px black;
+    background-color: rgb(238, 37, 37);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: -40px;
+}
+
+.btnIgual:hover {
+    background-color: rgb(202, 112, 39);
+    color: white;
+}
