@@ -11,8 +11,12 @@ function App() {
   /* valores de las teclas */
   const valores = ['(', ')', 'x!', 'x²', '√', 'ⁿ√', 'sin', 'cos', 'tg', 'x³', '∛', 'xⁿ', '1', '2', '3', '/', '%', 'ln', '4', '5', '6', '*', 'log', 'e', '7', '8', '9', '-', 'AC', '=', '.', '0', 'π', '+', 'MR'];
 
+  /* lo que se imprime por pantalla esta separado en anterior y posterior*/
   const [ant, setAnt] = useState('');
   const [pos, setPos] = useState('');
+
+  /* la memoria */
+  const [mr, setMr] = useState('');
 
   /* funciones en español */
   function factorial(n) {
@@ -66,7 +70,7 @@ function App() {
         setPos('');
         break;
       case 'MR':
-        setAnt('ERROR');
+        setAnt(mr);
         setPos('');
         break;
       case 'x²':
@@ -125,6 +129,7 @@ function App() {
         }
         setAnt(calculo);
         setPos('');
+        setMr(calculo);
         break;
       default:
         setAnt(ant + valor);
